@@ -25,7 +25,7 @@
         <table border="4" cellspacing="0" cellpadding="4">
           <thead>
             <tr>
-              <th>Ano</th>
+              <th>Año</th>
               <th>Institucion</th>
               <th>Lugar</th>
               <th>Culmino?</th>
@@ -44,13 +44,19 @@
               <td>Mendoza, Argentina</td>
               <td>Si</td>
             </tr>
+            <tr>
+              <td>2017</td>
+              <td>NextU</td>
+              <td>Mendoza, Argentina</td>
+              <td>Si</td>
+            </tr>
           </tbody>
         </table>
         <h3>Agregar Estudios</h3>
         <form>
           <fieldset>
-            <label for="ano">Ano</label><br>
-            <select>
+            <label for="ano"><em>Año:</em></label>
+            <select id="ano">
               <option>2000</option><br>
               <option>2001</option><br>
               <option>2002</option><br>
@@ -70,10 +76,19 @@
               <option>2016</option><br>
               <option>2017</option><br>
             </select></p>
-            <label for="Institucion" type="text" placeholder="Institucion" required>Institucion</label><br>
-            <textarea id="Institucion" rows="1" cols="25"></textarea></p>
+            <label for="Institucion"><em>Institucion:</em></label>
+            <input id="Institucion" type="text" placeholder="Institucion" rows="1" cols="25" required></p>
+            <label for="Lugar"><em>Lugar:</em></label>
+            <textarea id="Lugar" type="text" rows="2" cols="40" required></textarea></p>
+            <label for="Termino"><em>Termino?</em></label>
+            <input type="radio" id="radio" name="si o no" value="si">si
+            <input type="radio" id="radio" name="si o no" value="no">no</br>
+            <input type="submit" value="Enviar">
+
           </fieldset>
         </form>
+        <p>-------------------------------------</p>
+
         <footer>
           <em><a href="mailto:josecorti@gmail.com?subject=Contacto">josecorti@gmail.com</a></em>|
           <em>Cell:</em> <strong> +54 9 (261) 5071930 </strong>
